@@ -321,17 +321,17 @@
                 el: '.swiper-pagination',
                 type: 'bullets'
             },
-            navigation:{
-                nextEl:'.swiper-button-next',
+            navigation: {
+                nextEl: '.swiper-button-next',
                 prevEl: '.swiper-button-prev',
             }
 
         });
-        function checkScreenWidth(){
-            if (window.innerWidth>= 1728){
+        function checkScreenWidth() {
+            if (window.innerWidth >= 1728) {
                 swiper.navigation.init();
                 swiper.navigation.update();
-            }else{
+            } else {
                 swiper.navigation.destroy();
 
             }
@@ -339,7 +339,7 @@
 
         checkScreenWidth();
         window.addEventListener('resize', checkScreenWidth);
-        </script>
+    </script>
 </body>
 
 </html>
